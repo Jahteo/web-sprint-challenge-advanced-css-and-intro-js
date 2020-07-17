@@ -286,11 +286,14 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
-
-  }
+function addArtist (name, years, genre, nationality, bio) {
+  updatedArtists = [...artists];
+  id = artists.length;
+  updatedArtists.push ({id, name, years, genre, nationality, bio});
+  return updatedArtists;
+}
+addArtist("Josh Glantz", "1987 - ????", "Web Design & Culinary", "American", "Raised on military bases in Nevada & Japan by a Hoduran immigrant & an Alabama Southerner, Josh was heavily influenced by a multitude of cultures. His culinary works emphazise the use of whole ingredients to recreate taste from around the world from scratch, while his programming works mimimc the orderliness of fine cooking and pay homage to the great developer artists he learned from.");
+console.log(`task6:`, updatedArtists);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument:
 
